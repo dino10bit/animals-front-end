@@ -1,7 +1,7 @@
-#Demo:
+## Demo:
 See: https://youtu.be/Z7xB7vrn2yI
 
-##Installation:
+## Installation:
 1. `brew install node`
 2. `brew install yarn`
 3  `yarn install`
