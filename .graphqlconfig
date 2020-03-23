@@ -1,0 +1,12 @@
+{
+  "name": "Node Type ORM GraphQL Schema",
+  "schemaPath": "node-type-orm.graphql",
+  "extensions": {
+    "endpoints": {
+      "Default Endpoint": {
+        "url": "http://localhost:8080/graphql",
+        "introspect": true
+      }
+    }
+  }
+}

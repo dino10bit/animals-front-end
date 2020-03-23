@@ -1,0 +1,12 @@
+{
+  "ignore": [
+    "node_modules"
+  ],
+  "watch": [
+    "server",
+    "webpack",
+    "yarn.lock"
+  ],
+  "exec": "babel-node --extensions '.ts' ./server/dev.ts",
+  "ext": "ts"
+}

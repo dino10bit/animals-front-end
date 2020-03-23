@@ -1,0 +1,32 @@
+{
+  "name": "Animals front-end application",
+  "description": "",
+  "repository": "",
+  "keywords": [
+    "node",
+    "apollo",
+    "react",
+    "react-apollo",
+    "graphql",
+    "typescript",
+    "react-router",
+    "express",
+    "formik",
+    "yup"
+  ],
+  "website": "",
+  "env": {
+    "SERVER_URL": {
+      "description": "This is where our GraphQL backend lives.",
+      "value": "http://localhost:8080/graphql"
+    },
+    "NODE_ENV": {
+      "description": "We want to run the app in production mode.",
+      "value": "production"
+    },
+    "YARN_PRODUCTION": {
+      "description": "We want to keep dev dependencies.",
+      "value": "false"
+    }
+  }
+}

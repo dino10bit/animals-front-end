@@ -1,0 +1,92 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Mutation {
+  changePassword(data: ChangePasswordInput!): Session
+  createAnimal(data: CreateAnimalInput!): Animal!
+  deleteAnimal(id: Float!): Animal!
+  forgotPassword(email: String!): Boolean!
+  login(email: String!, password: String!): Session!
+  register(data: RegisterInput!): Session!
+  updateAnimal(data: UpdateAnimalInput!): Animal!
+}
+
+type Animal {
+  id: ID!
+  species: String!
+  name: String!
+  uri: String!
+  user: User!
+}
+
+type Species {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  accessToken(refreshToken: String!): String!
+  listAnimals: [Animal!]!
+  animalSearchBySpecies(species: String!): [Animal!]!
+  me: User
+  animalDetail(id: Float!): Animal!
+  speciesList: Species
+}
+
+type RefreshToken {
+  id: ID!
+  token: String!
+}
+
+type ResetPasswordToken {
+  expires: DateTime!
+  id: ID!
+  token: String!
+}
+
+type Session {
+  accessToken: String!
+  refreshToken: String!
+  user: User!
+}
+
+type User {
+  email: String!
+  firstName: String!
+  id: ID!
+  lastName: String!
+  animals: [Animal!]
+}
+
+input ChangePasswordInput {
+  password: String!
+  token: String!
+}
+
+input CreateAnimalInput {
+  species: String!
+  name: String!
+  uri: String!
+}
+
+input RegisterInput {
+  email: String!
+  firstName: String!
+  lastName: String!
+  password: String!
+}
+
+input UpdateAnimalInput {
+  id: Float!
+  species: String!
+  name: String!
+  uri: String!
+}
+
+
+"The javascript `Date` as string. Type represents date and time as the ISO Date string."
+scalar DateTime
