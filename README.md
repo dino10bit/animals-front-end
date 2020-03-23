@@ -1,17 +1,17 @@
-# Development
+#Demo:
+See: https://youtu.be/Z7xB7vrn2yI
 
-System Dependencies:
-
+##Installation:
 1. `brew install node`
 2. `brew install yarn`
+3  `yarn install`
+4. `yarn apollo:generate-types`
 
-Run development server:
+# Run production server:
+1. `SERVER_URL=http://localhost:8080/graphql yarn build`
+2. `yarn prod`
 
-1. `yarn install`
-2. `yarn apollo:generate-types:watch`
-3. `yarn watch`
-
-## Useful Commands
+#### Useful Commands
 
 - `docker-compose up` run the application in Docker 🐳 container
 - `yarn apollo:remove-all-types` remove all automatically generated TS definitions
@@ -20,8 +20,7 @@ Run development server:
 - `yarn lint:css` lint CSS
 - `yarn lint:circular-dependencies` detect circular dependencies
 - `yarn test` run jest
-
-
-
-1. `SERVER_URL=http://localhost:8080/graphql yarn build`
-2. `yarn prod`
+- Run development server:
+  1. `yarn install`
+  2. `yarn apollo:generate-types`
+  3. `yarn watch`
