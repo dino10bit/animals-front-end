@@ -1,15 +1,14 @@
 /* eslint-disable complexity */
-import React, { FC } from 'react'
-import nl2br from 'react-nl2br'
-import { RouteComponentProps } from 'react-router'
 import { message, Modal } from 'antd'
+import React, { FC } from 'react'
+import { RouteComponentProps } from 'react-router'
 import { Link } from 'react-router-dom'
+import { Button } from 'components/Button'
+import { ErrorAlert } from 'components/ErrorAlert'
+import { Loader } from 'components/Loader'
+import { H1 } from 'components/Typography/H1'
 import { useAnimalDetail } from 'modules/animal/hooks/useAnimalDetail'
 import { useDeleteAnimal } from 'modules/animal/hooks/useDeleteAnimal'
-import { H1 } from 'components/Typography/H1'
-import { Loader } from 'components/Loader'
-import { ErrorAlert } from 'components/ErrorAlert'
-import { Button } from 'components/Button'
 import { useMe } from 'modules/auth/hooks/useMe'
 import { DetailContainer, ControlButtonsContainer } from './styled'
 
@@ -56,7 +55,7 @@ export const DetailPage: FC<RouteComponentProps<{
     <div data-testid={ANIMAL_DETAIL_TEST_ID}>
       <DetailContainer>
         <H1>{data.animalDetail.name}</H1>
-        <p>{nl2br(data.animalDetail.species)}</p>
+        <p>{data.animalDetail.species}</p>
         <img alt="image" src={data.animalDetail.uri} style={{height: 300}} />
       </DetailContainer>
 

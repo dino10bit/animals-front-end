@@ -6,18 +6,18 @@ import {
   UPDATE_ANIMAL_MUTATION,
 } from 'modules/animal/gql'
 import {
-  MockAnimalType,
-  MockAnimalWithUserType,
-  MockUserType,
-  MockUserWithAnimals,
-} from '../generators'
-import {
   CHANGE_PASSWORD_MUTATION,
   FORGOT_PASSWORD_MUTATION,
   LOGIN_MUTATION,
   ME_QUERY,
   REGISTER_MUTATION,
 } from '../../modules/auth/gql'
+import {
+  MockAnimalType,
+  MockAnimalWithUserType,
+  MockUserType,
+  MockUserWithAnimals,
+} from '../generators'
 
 //
 // List Animals

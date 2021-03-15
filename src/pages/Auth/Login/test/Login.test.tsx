@@ -1,11 +1,11 @@
-import React from 'react'
 import { waitForElement } from '@testing-library/react'
+import React from 'react'
 import { App } from 'app'
 import { ROUTE_PATHS } from 'routes'
-import { renderWithRouter } from 'test-utils/render'
 import { changeInput, submitForm } from 'test-utils/form/input'
 import { createUserWithAnimals } from 'test-utils/generators'
 import { mockLoginSuccess, mockMeSuccess } from 'test-utils/gql'
+import { renderWithRouter } from 'test-utils/render'
 import { ME_TEST_ID } from '../../Me'
 import { PAGE_LOGIN_TEST_ID } from '../index'
 

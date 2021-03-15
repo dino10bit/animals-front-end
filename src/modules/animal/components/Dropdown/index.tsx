@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
 import Downshift from 'downshift'
+import React from 'react'
 import { ApolloConsumer } from 'react-apollo'
 
 interface IOptionType {
@@ -11,12 +11,12 @@ interface IAnimalSelectComponentProps {
   options: IOptionType[]
   loading: boolean
   data?: {
-    animalSearchBySpecies: Array<{
+    animalSearchBySpecies: {
       id: string
       name: string
       species: string
       uri: string
-    }>
+    }[]
   }
   handleChange: (e: any, x: { name; value }) => void
 }

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { Input as AntInput, Icon as AntIcon } from 'antd'
+import styled from 'styled-components'
 
 export const Input = styled(AntInput)`
   margin-top: 5px !important;

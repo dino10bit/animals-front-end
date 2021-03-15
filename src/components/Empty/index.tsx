@@ -1,5 +1,5 @@
-import React from 'react'
 import { Empty as AntEmpty } from 'antd'
+import React from 'react'
 
 export const COMPONENT_EMPTY_TEST_ID = 'error-alert-component'
 

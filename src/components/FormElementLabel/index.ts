@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { Form } from 'antd'
+import styled from 'styled-components'
 
 export const FormElementLabel = styled(Form.Item)<{ isHidden?: boolean }>`
   display: ${props => (props.isHidden ? 'none' : 'block')};

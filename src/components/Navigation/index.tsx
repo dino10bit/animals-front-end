@@ -1,9 +1,9 @@
-import React from 'react'
+import { useQuery } from '@apollo/client'
 import { Layout, Menu } from 'antd'
+import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
-import { useQuery } from '@apollo/react-hooks'
-import { Me } from 'modules/auth/gql/__generated__/Me'
 import { ME_QUERY } from 'modules/auth/gql'
+import { Me } from 'modules/auth/gql/__generated__/Me'
 import { ROUTE_PATHS } from 'routes'
 import { StyledMenu } from './styled'
 

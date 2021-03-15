@@ -1,6 +1,6 @@
 import path from 'path'
-import { Express } from 'express'
 import compression from 'compression'
+import { Express } from 'express'
 import { BUILD_DIR_PUBLIC } from '../config'
 
 export const handleHttpsRedirect = (app: Express) =>

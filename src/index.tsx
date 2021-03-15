@@ -1,9 +1,9 @@
+import { ApolloProvider } from '@apollo/client'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router } from 'react-router-dom'
-import { ApolloProvider } from '@apollo/react-hooks'
-import { App } from 'app'
 import { apolloClient } from 'apolloClient'
+import { App } from 'app'
 import { browserHistory } from 'appHistory'
 
 const renderApp = () => {

@@ -1,5 +1,5 @@
-import React, { FC } from 'react'
 import { Layout } from 'antd'
+import React, { FC } from 'react'
 import { AnimalCard } from '../AnimalCard'
 import { Select } from '../Dropdown/select'
 import { Container } from './styled'

@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ComponentType } from 'react'
 import { Route, Redirect, RouteProps } from 'react-router-dom'
-import { auth } from 'services/auth'
 import { ROUTE_PATHS } from 'routes'
+import { auth } from 'services/auth'
 
 interface IOuterProps {
   component: ComponentType

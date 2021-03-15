@@ -1,8 +1,8 @@
-import React, { FC, useContext, useState, useEffect } from 'react'
-import { useLazyQuery } from 'react-apollo'
+import { useLazyQuery } from '@apollo/client'
 import { Col, Row } from 'antd'
-import { SEARCH_ANIMALS_BY_SPECIES_QUERY, LIST_ANIMALS_QUERY } from 'modules/animal/gql'
+import React, { FC, useContext, useState, useEffect } from 'react'
 import { Loader } from 'components/Loader'
+import { SEARCH_ANIMALS_BY_SPECIES_QUERY, LIST_ANIMALS_QUERY } from 'modules/animal/gql'
 import { ListAnimals_listAnimals } from '../../gql/__generated__/ListAnimals'
 import { AnimalContext } from '../Dropdown/AnimalsContext'
 import { Card, CardLink, Meta } from './styled'
@@ -14,10 +14,8 @@ export const AnimalCard: FC<any> = () => {
   const [animalsData, setAnimalsData] = useState()
   const [loadAnimal, { called, loading, data }] = useLazyQuery(SEARCH_ANIMALS_BY_SPECIES_QUERY)
   const [defaultLoadAnimal, defaultResponse] = useLazyQuery(LIST_ANIMALS_QUERY)
-  console.log('XXXX - AnimalCard')
 
   useEffect(() => {
-    console.log(selectedAnimal)
     if (!selectedAnimal) {
       defaultLoadAnimal()
       return

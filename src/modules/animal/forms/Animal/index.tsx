@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
 import { Formik, Form, FormikHelpers } from 'formik'
+import React, { FC } from 'react'
 import * as Yup from 'yup'
-import { TextInput } from 'components/TextInput'
 import { FormButton } from 'components/FormButton'
+import { TextInput } from 'components/TextInput'
 
 const registerSchema = Yup.object().shape({
   name: Yup.string().required('Required'),

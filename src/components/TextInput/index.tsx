@@ -1,9 +1,9 @@
-import React, { FC } from 'react'
 import { ErrorMessage, Field, FieldProps } from 'formik'
+import React, { FC } from 'react'
+import { Description } from 'components/FormElementDescription'
 import { FormElementError } from '../FormElementError'
 import { FormElementLabel } from '../FormElementLabel'
 import { Input, Icon } from './styled'
-import { Description } from 'components/FormElementDescription'
 
 interface IProps {
   iconType?: string

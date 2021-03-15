@@ -1,7 +1,7 @@
-import React from 'react'
+import { MockedResponse } from '@apollo/client/testing'
 import { render } from '@testing-library/react'
+import React from 'react'
 import { MemoryRouter } from 'react-router-dom'
-import { MockedResponse } from '@apollo/react-testing'
 import { ApolloProvider } from './ApolloProvider'
 
 export const renderWithRouter = (

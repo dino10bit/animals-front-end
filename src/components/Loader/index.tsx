@@ -1,5 +1,5 @@
-import React from 'react'
 import { Spin } from 'antd'
+import React from 'react'
 
 export const COMPONENT_LOADER_TEST_ID = 'loader-component'
 
