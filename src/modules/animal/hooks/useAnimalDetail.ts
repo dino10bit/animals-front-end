@@ -1,9 +1,9 @@
-import { useQuery } from '@apollo/react-hooks'
+import { useQuery } from '@apollo/client'
+import { ANIMAL_DETAIL_QUERY } from '../gql'
 import {
   AnimalDetail,
   AnimalDetailVariables,
 } from '../gql/__generated__/AnimalDetail'
-import { ANIMAL_DETAIL_QUERY } from '../gql'
 
 export const useAnimalDetail = ({ animalId }: { animalId: number }) =>
   useQuery<AnimalDetail, AnimalDetailVariables>(ANIMAL_DETAIL_QUERY, {

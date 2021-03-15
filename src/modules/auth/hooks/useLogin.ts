@@ -1,4 +1,4 @@
-import { useMutation } from '@apollo/react-hooks'
+import { useMutation } from '@apollo/client'
 import { LOGIN_MUTATION } from '../gql'
 import { Login, LoginVariables } from '../gql/__generated__/Login'
 

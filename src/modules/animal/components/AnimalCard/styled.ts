@@ -1,6 +1,6 @@
-import styled from 'styled-components'
 import { Card as AntCard } from 'antd'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 export const { Meta } = AntCard
 
 export const Card = styled(AntCard)`

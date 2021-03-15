@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 import { message } from 'antd'
 import { Formik, Form } from 'formik'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import * as Yup from 'yup'
-import { useForgotPassword } from '../../hooks/useForgotPassword'
-import { TextInput } from 'components/TextInput'
 import { FormButton } from 'components/FormButton'
 import { ElementLink } from 'components/FormElementLink'
+import { TextInput } from 'components/TextInput'
 import { ROUTE_PATHS } from 'routes'
+import { useForgotPassword } from '../../hooks/useForgotPassword'
 
 export const SUCCESS_MESSAGE = 'Password reset link has been sent to your email'
 

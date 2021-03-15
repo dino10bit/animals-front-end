@@ -12,7 +12,7 @@ export const SEARCH_ANIMALS_BY_SPECIES_QUERY = gql`
 `
 
 export const LIST_SPECIES_QUERY = gql`
-  query {
+  query SpeciesList {
     speciesList {
       id
       name

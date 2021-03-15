@@ -1,6 +1,6 @@
-import { FC, useEffect } from 'react'
+import { useApolloClient } from '@apollo/client'
 import { message } from 'antd'
-import { useApolloClient } from '@apollo/react-hooks'
+import { FC, useEffect } from 'react'
 import { RouteComponentProps } from 'react-router'
 import { auth } from 'services/auth'
 

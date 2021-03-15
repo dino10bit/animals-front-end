@@ -1,4 +1,4 @@
-import { useQuery } from '@apollo/react-hooks'
+import { useQuery } from '@apollo/client'
 import { ME_QUERY } from '../gql'
 import { Me } from '../gql/__generated__/Me'
 

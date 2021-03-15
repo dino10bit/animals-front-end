@@ -1,5 +1,5 @@
+import { MockedProvider, MockedResponse } from '@apollo/client/testing'
 import React, { FC } from 'react'
-import { MockedProvider, MockedResponse } from '@apollo/react-testing'
 
 interface IProps {
   mocks: MockedResponse[]

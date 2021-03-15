@@ -1,10 +1,10 @@
-import React, { useEffect, useContext, useState } from 'react'
+import { useQuery } from '@apollo/client'
 import Downshift from 'downshift'
-import { useQuery } from 'react-apollo'
+import React, { useEffect, useContext, useState } from 'react'
 import { Loader } from 'components/Loader'
 import { LIST_SPECIES_QUERY } from 'modules/animal/gql'
-import { Search, Label, Input, List, ListItem } from './styled'
 import { AnimalContext } from './AnimalsContext'
+import { Search, Label, Input, List, ListItem } from './styled'
 
 export const Select = () => {
   const { setSelectedAnimal } = useContext(AnimalContext)

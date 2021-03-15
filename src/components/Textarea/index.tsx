@@ -1,5 +1,5 @@
-import React, { FC } from 'react'
 import { ErrorMessage, Field, FieldProps } from 'formik'
+import React, { FC } from 'react'
 import { FormElementError } from '../FormElementError'
 import { FormElementLabel } from '../FormElementLabel'
 import { StyledTextArea } from './styled'

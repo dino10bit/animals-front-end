@@ -1,6 +1,6 @@
 import { DataProxy } from 'apollo-cache'
-import { ListAnimals } from '../gql/__generated__/ListAnimals'
 import { LIST_ANIMALS_QUERY } from '../gql'
+import { ListAnimals } from '../gql/__generated__/ListAnimals'
 
 export const updateListAnimals = <T>(
   queryName: string,

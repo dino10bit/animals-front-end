@@ -1,15 +1,15 @@
+import { message } from 'antd'
+import { Formik, Form } from 'formik'
+import { History as RouterHistory } from 'history'
 import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
-import { message } from 'antd'
-import { History as RouterHistory } from 'history'
-import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
-import { useChangePassword } from '../../hooks/useChangePassword'
-import { auth } from '../../../../services/auth'
-import { TextInput } from 'components/TextInput'
 import { FormButton } from 'components/FormButton'
 import { ElementLink } from 'components/FormElementLink'
+import { TextInput } from 'components/TextInput'
 import { ROUTE_PATHS } from 'routes'
+import { auth } from '../../../../services/auth'
+import { useChangePassword } from '../../hooks/useChangePassword'
 
 const initialValues = {
   password: '',

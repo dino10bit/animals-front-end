@@ -1,14 +1,14 @@
-import React from 'react'
 import { waitForElement } from '@testing-library/react'
-import { ROUTE_PATHS } from 'routes'
+import React from 'react'
 import { App } from 'app'
-import { COMPONENT_LOADER_TEST_ID } from 'components/Loader'
 import { COMPONENT_ERROR_ALERT_TEST_ID } from 'components/ErrorAlert'
+import { COMPONENT_LOADER_TEST_ID } from 'components/Loader'
 import { COMPONENT_PAGE_CARD_TEST_ID } from 'modules/animal/components/AnimalCard'
-import { renderWithRouter } from 'test-utils/render'
-import { mockMeError, mockMeSuccess } from 'test-utils/gql'
-import { createUserWithPages } from 'test-utils/generators'
+import { ROUTE_PATHS } from 'routes'
 import { auth } from 'services/auth'
+import { createUserWithPages } from 'test-utils/generators'
+import { mockMeError, mockMeSuccess } from 'test-utils/gql'
+import { renderWithRouter } from 'test-utils/render'
 
 describe('[page] Me', () => {
   beforeEach(() => {

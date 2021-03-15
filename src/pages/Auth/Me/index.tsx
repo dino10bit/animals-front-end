@@ -1,7 +1,7 @@
 import React from 'react'
-import { H1 } from 'components/Typography/H1'
-import { Loader } from 'components/Loader'
 import { ErrorAlert } from 'components/ErrorAlert'
+import { Loader } from 'components/Loader'
+import { H1 } from 'components/Typography/H1'
 import { useMe } from 'modules/auth/hooks/useMe'
 import { Info } from './styled'
 

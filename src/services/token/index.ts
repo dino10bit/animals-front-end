@@ -1,13 +1,13 @@
-import { Observable } from 'apollo-client/util/Observable'
 import { message } from 'antd'
 import { ApolloClient } from 'apollo-client'
+import { Observable } from 'apollo-client/util/Observable'
 import { NextLink, Operation } from 'apollo-link'
+import { browserHistory } from 'appHistory'
+import { ACCESS_TOKEN_QUERY } from 'modules/auth/gql'
 import {
   AccessToken,
   AccessTokenVariables,
 } from 'modules/auth/gql/__generated__/AccessToken'
-import { ACCESS_TOKEN_QUERY } from 'modules/auth/gql'
-import { browserHistory } from 'appHistory'
 import { auth } from '../auth'
 
 export const handleRefreshToken = ({

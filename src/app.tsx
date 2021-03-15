@@ -1,10 +1,10 @@
 import React from 'react'
-import { GlobalStyles } from 'styles'
-import { Navigation } from 'components/Navigation'
-import { Layout } from 'components/Layout'
 import { Content } from 'components/Content'
+import { Layout } from 'components/Layout'
+import { Navigation } from 'components/Navigation'
 import { AnimalProvider } from 'modules/animal/components/Dropdown/AnimalsContext'
 import { Routes } from 'routes'
+import { GlobalStyles } from 'styles'
 import 'antd/dist/antd.css'
 
 export const App = () => (
